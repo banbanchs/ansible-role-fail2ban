@@ -1,6 +1,8 @@
 ansible-role-fail2ban
 =========
 
+[![Build Status](https://travis-ci.org/banbanchs/ansible-role-fail2ban.svg?branch=master)](https://travis-ci.org/banbanchs/ansible-role-fail2ban)
+
 An simple ansible role for installing fail2ban.
 
 Role Variables
