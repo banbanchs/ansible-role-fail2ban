@@ -9,3 +9,8 @@ fail2ban_usedns: no
 
 fail2ban_jail_ssh_enabled: true
 fail2ban_jail_sshddos_enabled: true
+
+# Start service by default (started/stopped)
+fail2ban_service_state: started
+# Enable service on boot
+fail2ban_service_enabled: yes
