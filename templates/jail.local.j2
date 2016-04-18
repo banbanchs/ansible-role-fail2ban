@@ -12,17 +12,17 @@ findtime = {{ fail2ban_findtime }}
 # jail.{conf,local} configuration files.
 destemail = {{ fail2ban_destemail }}
 
-usedns = {{ fail2ban_usedns }}
+usedns = {{ 'yes' if fail2ban_usedns else 'no' }}
 
 #
 # JAILS
 #
 
-[ssh]
+[sshd]
 
-enabled  = {{ fail2ban_jail_ssh_enabled }}
+enabled  = {{ 'true' if fail2ban_jail_ssh_enabled else 'false' }}
 
 
-[ssh-ddos]
+[sshd-ddos]
 
-enabled  = {{ fail2ban_jail_sshddos_enabled }}
+enabled  = {{ 'true' if fail2ban_jail_sshddos_enabled else 'false' }}
