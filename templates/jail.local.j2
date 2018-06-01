@@ -12,6 +12,9 @@ findtime = {{ fail2ban_findtime }}
 # jail.{conf,local} configuration files.
 destemail = {{ fail2ban_destemail }}
 
+# use iptables to ban ip
+banaction = iptables-multiport
+
 usedns = {{ 'yes' if fail2ban_usedns else 'no' }}
 
 #
